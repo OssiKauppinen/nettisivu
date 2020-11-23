@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--style type="text/css">
+      #otsikko_portfolio{
+        background-color:black;
+        color:white;
+        text-align:center;
+        padding:10px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td, th {
+        border: 1px solid;
+        text-align: left;
+        padding: 8px;
+      }
+    </style-->
+    <link rel="stylesheet" type="text/css" href="/tyyli.css">
+    <title>Ossi - Portfolio</title>
+  </head>
+  <body>
+    <script src="javas.js"></script>
+    <header id="otsikko_portfolio">
+      Ossi Kauppinen - Portfolio
+    </header>
+    <div class="alue">
+      <div class="opinnot">
+        <h3>Opinnot</h3>
+        <table>
+          <tr>
+            <th>Aloitusvuosi</th>
+            <th>Suoritusvuosi</th>
+            <th>Opintokokonaisuus</th>
+          </tr>
+          <tr>
+            <td>2019</td>
+            <td>keskeytetty 2020</td>
+            <td>Lukio</td>
+          </tr>
+          <tr>
+            <td>2020</td>
+            <td>2023</td>
+            <td>Ammattikoulu</td>
+          </tr>
+        </table>
+      </div><br><br>
+      <section>
+      <div class="sisaltoa1">
+        <article>
+          <h3>Työkokemus</h3>
+          <ul>
+            <li>Web Developer Trainee yrityksessä Digitalist Group Oyj 24.9.2020 lähtien</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Harrastukseni</h3>
+          <p>Tietokoneet ovat kiinnostaneet minua pienestä pitäen. Olen aina ollut jonkinlaisissa tekemisissä tietokoneiden kanssa viisi vuotiaasta asti. Tietokoneella pelaaminen nykyään on harrastus, johon olen käyttänyt paljon aikaa ja jonka otan tosissani. Pelaan tällä hetkellä kilpailullisesti Tamperelaisen organisaation <a href="http://www.mansepp.fi/esports-joukkue/" target="_blank">MansePP esports</a> -tiimissä peliä Overwatch. Opin harrastuksessa esimerkiksi tiimissä työskentelyä.</p>
+          <a href="http://www.mansepp.fi/esports-joukkue/" target="_blank"><img src="https://pbs.twimg.com/profile_images/1122587900053524482/ghODX7vq.jpg" width="100"></a>
+        </article>
+      </div>
+      </section><br><br>
+    <div class="lisatieto">
+      <section>
+      <article>
+        <h3>Erityistaidot</h3>
+        <ul>
+          <li>HTML Perusteet</li>
+          <li>XML Perusteet</li>
+          <li>Hyvä tietokoneiden kanssa</li>
+        </ul>
+        <h3>Luonteenpiirteet</h3>
+        <ul>
+          <li>Huolellinen</li>
+          <li>Omatoiminen</li>
+          <li>Yhteistyökykyinen</li>
+          <li>Nopea oppimaan uutta</li>
+        </ul>
+      </article>
+      </section>
+    </div>
+    <div class="navigointi">
+      <ul>
+        <li><a class="active" href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Ota yhteyttä</a></li>
+        <li><a href="/index.html">Etusivu</a></li>
+        <li><a href="/blogi.html">Blogi</a></li>
+        <li><a id="asetus" href="#" onclick="naytaValikko();return false;">Asetukset</a></li>
+      <div id="valinta" style="display:none;">
+        Teema:<br>
+      <ul class="kurssi">
+        <li class="sisalto"><input type="radio" name="theme">Vaalea</li>
+        <li class="sisalto"><input type="radio" name="theme">Tumma</li>
+        <li class="sisalto"><input type="radio" name="theme">Sateenkaari</li>
+      </ul>
+      <input id="vaihda" type="submit" value="Merkkaa">
+      </div>
+      </ul>
+    </div><br>
+    <h3><a class="nappula" href="contact.html">Ota yhteyttä</a></h3>
+    </div>
+  </body>
+</html>
