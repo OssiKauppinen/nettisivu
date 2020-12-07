@@ -204,3 +204,12 @@ body{
 .laatikko li{
   list-style-type: none;
 }
+.teemavalikko{
+  float:right;
+  padding:5px;
+  width:13%;
+}
+.teemanappula{
+  margin:10px;
+  width: auto;
+}

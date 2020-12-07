@@ -25,6 +25,18 @@
     <header id="otsikko_portfolio">
       Ossi Kauppinen - Portfolio
     </header>
+    <div class="teemavalikko">
+      <form class="vaihdaTeemaa">
+      <p>Valitse teema:</p>
+      <input type="radio" id="tumma" name="teema" value="tumma">
+        <label for="tumma">Tumma</label><br>
+      <input type="radio" id="vaalea" name="teema" value="vaalea">
+        <label for="vaalea">Vaalea</label><br>
+      <input type="radio" id="sateenkaari" name="teema" value="sateenkaari">
+        <label for="sateenkaari">Sateenkaari</label>
+      <input class="teemanappula" type="submit" value="Submit">
+      </form>
+    </div>
     <div class="alue">
       <div class="opinnot">
         <h3>Opinnot</h3>
@@ -84,16 +96,6 @@
       <ul>
         <li><a class="active" href="index.html">Portfolio</a></li>
         <li><a href="contact.html">Ota yhteyttä</a></li>
-        <li><a id="asetus" href="#" onclick="naytaValikko();return false;">Asetukset</a></li>
-      <div id="valinta" style="display:none;">
-        Teema:<br>
-      <ul>
-        <li><input type="radio" name="theme">Vaalea</li>
-        <li><input type="radio" name="theme">Tumma</li>
-        <li><input type="radio" name="theme">Sateenkaari</li>
-      </ul>
-      <input id="vaihda" type="submit" value="Merkkaa">
-      </div>
       </ul>
     </div><br>
     <h3><a class="nappula" href="contact.html">Ota yhteyttä</a></h3>

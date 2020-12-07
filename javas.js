@@ -1,17 +1,31 @@
-function naytaValikko() {
+/*function naytaValikko() {
 var valikko = document.getElementById("valinta");
 if (valikko.style.display === "none") {
     valikko.style.display = "block";
 } else {
     valikko.style.display = "none";
 }
-}
+}*/
+const teema = document.querySelector('#teema').value;
+
+
+document.querySelector('.teemanappula').addEventListener('click', e =>{
+  
+  if teema == 'tumma'{
+    body.style.background = 'black'
+  }
+  else if(teema == 'vaalea'){
+    body.style.background = 'white';
+  }
+});
+
 window.onload=function(){
 const lahetysnappi = document.querySelector('#laheta');
 const nimiSisalto = document.querySelector('#nimi');
 const postiSisalto = document.querySelector('#sposti');
 const virhe = document.querySelector('.virheilmoitus');
 const kiitos = document.querySelector('.kiitosilmoitus');
+
 
 lahetysnappi.addEventListener('click', e =>{
   e.preventDefault();
