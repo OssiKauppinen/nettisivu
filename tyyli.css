@@ -204,12 +204,9 @@ body{
 .laatikko li{
   list-style-type: none;
 }
-.teemavalikko{
-  float:right;
-  padding:5px;
-  width:13%;
+.dark-mode {
+  background-color: #474747;
 }
-.teemanappula{
-  margin:10px;
-  width: auto;
+.rainbow-mode {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
 }

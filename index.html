@@ -1,23 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--style type="text/css">
-      #otsikko_portfolio{
-        background-color:black;
-        color:white;
-        text-align:center;
-        padding:10px;
-      }
-      table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-      td, th {
-        border: 1px solid;
-        text-align: left;
-        padding: 8px;
-      }
-    </style-->
     <link rel="stylesheet" type="text/css" href="tyyli.css">
     <title>Ossi - Portfolio</title>
   </head>
@@ -25,18 +8,6 @@
     <header id="otsikko_portfolio">
       Ossi Kauppinen - Portfolio
     </header>
-    <div class="teemavalikko">
-      <form class="vaihdaTeemaa">
-      <p>Valitse teema:</p>
-      <input type="radio" id="tumma" name="teema" value="tumma">
-        <label for="tumma">Tumma</label><br>
-      <input type="radio" id="vaalea" name="teema" value="vaalea">
-        <label for="vaalea">Vaalea</label><br>
-      <input type="radio" id="sateenkaari" name="teema" value="sateenkaari">
-        <label for="sateenkaari">Sateenkaari</label>
-      <input class="teemanappula" type="submit" value="Submit">
-      </form>
-    </div>
     <div class="alue">
       <div class="opinnot">
         <h3>Opinnot</h3>
@@ -96,6 +67,12 @@
       <ul>
         <li><a class="active" href="index.html">Portfolio</a></li>
         <li><a href="contact.html">Ota yhteyttä</a></li>
+        <li><a id="asetus" href="#" onclick="naytaValikko();return false;">Asetukset</a></li>
+      <div id="valinta" class="teemavalinta" style="display:none;">
+        <li>Teema:<li>
+          <li><button class="nappula" onclick="darkMode()">Tumma tila on/off</button></li>
+          <li><button class="nappula" onclick="rainbowMode()">Sateenkaari on/off</button></li>
+      </div>
       </ul>
     </div><br>
     <h3><a class="nappula" href="contact.html">Ota yhteyttä</a></h3>

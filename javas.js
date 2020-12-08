@@ -1,23 +1,25 @@
-/*function naytaValikko() {
+function naytaValikko() {
 var valikko = document.getElementById("valinta");
 if (valikko.style.display === "none") {
     valikko.style.display = "block";
 } else {
     valikko.style.display = "none";
 }
-}*/
-const teema = document.querySelector('#teema').value;
+}
 
+function darkMode() {
+   var element = document.body;
+   var valikko = document.getElementById("valinta");
+   element.classList.toggle("dark-mode");
+   valikko.style.display = "none";
+}
 
-document.querySelector('.teemanappula').addEventListener('click', e =>{
-  
-  if teema == 'tumma'{
-    body.style.background = 'black'
-  }
-  else if(teema == 'vaalea'){
-    body.style.background = 'white';
-  }
-});
+function rainbowMode() {
+   var element = document.body;
+   var valikko = document.getElementById("valinta");
+   element.classList.toggle("rainbow-mode");
+   valikko.style.display = "none";
+}
 
 window.onload=function(){
 const lahetysnappi = document.querySelector('#laheta');
