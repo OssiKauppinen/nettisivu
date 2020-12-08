@@ -42,6 +42,7 @@ lahetysnappi.addEventListener('click', e =>{
   setTimeout(() => kiitos.innerHTML = "", 5000);
   setTimeout(() => kiitos.classList.remove('kiitos'), 5000);
   postiSisalto.value = '';
+  nimiSisalto.value = '';
   virhe.classList.remove('virhe');
   virhe.innerHTML = '';
   kiitos.classList.add('kiitos');
