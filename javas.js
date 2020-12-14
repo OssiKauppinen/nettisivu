@@ -53,17 +53,18 @@ lahetysnappi.addEventListener('click', e =>{
   setTimeout(() => lahetysnappi.disabled = false, 30000);
 }});
 }
-const nimiKentta = document.querySelector('#nimi');
-const emailKentta = document.querySelector('#sposti');
-const viestiKentta = document.querySelector('textarea');
-const numeroKentta = document.querySelector('#num');
-const ikaKentta = document.querySelector('#age');
-const syntymaKentta = document.querySelector('#dateofbirth');
-const yhteydenottoKentta = document.querySelector('#yhteys');
+const nimiKentta = document.querySelector('#nimi').value;
+const emailKentta = document.querySelector('#sposti').value;
+const viestiKentta = document.querySelector('textarea').value;
+const numeroKentta = document.querySelector('#num').value;
+const ikaKentta = document.querySelector('#age').value;
+const syntymaKentta = document.querySelector('#dateofbirth').value;
+const yhteydenottoKentta = document.querySelector('#yhteys').value;
 
 function sendJSON(){
   let xhr = new XMLHttpRequest();
-  let url = "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp1?code=lWOELqiU07AqsBviOQYzuNIrQP7xoV7NV7C5W2ctgjIRcf7nXE2biw==";
+  //let url = "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp1?code=lWOELqiU07AqsBviOQYzuNIrQP7xoV7NV7C5W2ctgjIRcf7nXE2biw==";
+  let url = "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp2?code=PnWhScmEcspN8Fy7eYKnIZA37AFgUZ0fMQ1OpXOJ6dtBPBGNXAMIqQ==";
 
   xhr.open("POST", url, true);
   
@@ -75,10 +76,9 @@ function sendJSON(){
     }
   };
   var data = JSON.stringify({
-    "EmailMsg": `${viestiKentta}`, // Kirjoittaa spostin sisällön
-    "EmailAddress": `${emailKentta}`, // Viestin kirjoittajan sposti
-    "EmailTo": "ossi.o.kauppinen@gmail.com", // Oma spostini
-    "EmailName": `${nimiKentta}` // Nimikentän sisältö
+    "EmailMsg": viestiKentta + "Lähettäjän sähköposti:" + emailKentta, // Kirjoittaa spostin sisällön
+    "EmailTo": "ossi.kauppinen", // Oma spostini
+    "EmailName": nimiKentta // Nimikentän sisältö
   });
   xhr.send(data);
 };
