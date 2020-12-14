@@ -63,7 +63,6 @@ const yhteydenottoKentta = document.querySelector('#yhteys').value;
 
 function sendJSON(){
   let xhr = new XMLHttpRequest();
-  //let url = "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp1?code=lWOELqiU07AqsBviOQYzuNIrQP7xoV7NV7C5W2ctgjIRcf7nXE2biw==";
   let url = "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp2?code=PnWhScmEcspN8Fy7eYKnIZA37AFgUZ0fMQ1OpXOJ6dtBPBGNXAMIqQ==";
 
   xhr.open("POST", url, true);
@@ -76,7 +75,7 @@ function sendJSON(){
     }
   };
   var data = JSON.stringify({
-    "EmailMsg": viestiKentta + "Lähettäjän sähköposti:" + emailKentta, // Kirjoittaa spostin sisällön
+    "EmailMsg": viestiKentta, // Kirjoittaa spostin sisällön
     "EmailTo": "ossi.kauppinen", // Oma spostini
     "EmailName": nimiKentta // Nimikentän sisältö
   });
