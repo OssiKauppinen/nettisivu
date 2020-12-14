@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="tyyli.css">
+    </style>
+  </head>
+  <body>
+    <header id="otsikko_blogi">
+      Ossi Kauppinen - Blogi
+    </header>
+    <section class="blogiteksti">
+      <article>
+        <h2>Ajatuksia tietoturvasta</h2>
+        <small>Ossi Kauppinen, 14.12.2020</small>
+        <h3>Botnet</h3>
+        <p>Bottiverkko eli botnet koostuu tietokoneohjelmista (boteista), jotka ovat yhteydessä keskenään tietoverkon kuten internetin, välityksellä. Botnet-verkkoja syntyy, kun viruksia ja matoja päätyy käyttäjän tietokoneelle ja haittaohjelma sisältää tai hakee verkosta ohjelman, botin, joka antaa botnet-verkon omistajalle hallinnan kyseisestä koneesta. Yleisimmät käyttökohteet botnet-verkoilla ovat roskapostien lähetys, sekä palvelunestohyökkäysten suorittaminen hajautetusti monelta koneelta. Bottiverkoissa voi olla tuhansia laitteita, joita kaikkia hyökkääjä pystyy hallitsemaan. Palvelunestohyökkäysten lisäksi boteilla voidaan esimerkiksi louhia bitcoinin kaltaisia kryptovaluuttoja. Internettiin kytkettyjen laitteiden määrä kasvaa jatkuvasti, minkä takia odotettavissa on yhä enemmän ja suurempia bottiverkkoja.<br><br>
+        Bottiverkkoja on erilaisia. Joissain botneteissä kaapatut tietokoneet ottavat kaikki yhteyttä tietyltä palvelimelta, joka antaa niille käskyjä. P2P botneteissä tietokoneet ottavat yhteyden suoraan toisiinsa ja vastaanottaa käskyjä digitaalisella avaimella joka omistajalla on. Kaapatulla tietokoneella täytyy olla jonkinlainen ohjelma, joka ottaa vastaan käskyjä ja hallitsee konetta, muuten kone ei voi toimia botnetissä. Botnettejä on vaikea pysäyttää, mutta se on mahdollista. Jotkut tarjoavat ohjelmia, joilla voi tarkistaa onko oma tietokone botnetin hallinnassa. Automaattisesti botnettien hyökkäyksiä on vaikea estää ja vielä vaikeampi jäljittää.<br><br>
+        Botnettiin kaapattuja koneita kutsutaan Zombietietokoneiksi. Tälläiset tietokoneet ovat altistuneet virukselle, trojanille tai hakkerille ja niitä voidaan käyttää haitallisia tehtäviä ulkopuolelta tulevilla ohjeilla. Monet zombietietokoneiden omistajat eivät tiedä, että heidän tietokoneitaan käytetään tähän. Siitä tulee nimeen Zombie. Hakkerit voivat myös tällöin varastaa tietoja kyseiseltä tietokoneelta.
+      </p>
+      <h3>Deep packet inspection</h3>
+      <p>Tekstiä deep packet inspectionnista tähän. - in progress</p>
+      <h4>Lähteet</h4>
+      <a href="https://wiki.eduuni.fi/display/tuttietoturva/Botnet-verkkojen+toimintaa">Eduuni Wiki<a><br>
+      <a href="https://en.wikipedia.org/wiki/Botnet">Botnet - Wikipedia<a><br>
+      <a href="https://searchsecurity.techtarget.com/definition/botnet">TechTarget - SearchSecurity<a>
+      </article>
+    </section>
+    <div class="navigointi">
+      <ul>
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a class="active" href="blogi.html">Blogi</a></li>
+        <li><a href="contact.html">Ota yhteyttä</a></li>
+        <li><a id="asetus" href="#" onclick="naytaValikko();return false;">Asetukset</a></li>
+      <div id="valinta" class="teemavalinta" style="display:none;">
+        <li>Teema:<li>
+          <li><button class="nappula" onclick="darkMode()">Tumma tila on/off</button></li>
+          <li><button class="nappula" onclick="rainbowMode()">Sateenkaari on/off</button></li>
+      </div>
+      </ul>
+    </div>
+    <script src="javas.js"></script>
+  </body>
+</html>

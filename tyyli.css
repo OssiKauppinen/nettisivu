@@ -23,6 +23,15 @@ body{
   margin:0px;
   top:0px;  
 }
+#otsikko_blogi{
+  background-color:#000;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+  font-size:150%;
+  margin:0px;
+  top:0px;   
+}
 .alue{
   align-self: center;
   width:70%;
@@ -32,7 +41,6 @@ body{
   border-collapse: separate;
   border-spacing:0;
   border:solid black 1px;
-  background-color:#ffffff;
   width: 100%;
   border-radius:20px;
 }
@@ -69,9 +77,9 @@ body{
   font-weight:bold;
 }
 .lisatieto{
-  color:#000000;
-  background-color:#ffffff;
+  border-color:black;
   padding:20px;
+  background-color:white;
   border-style:1px solid;
   border-radius:20px
 }
@@ -209,4 +217,10 @@ body{
 }
 .rainbow-mode {
   background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  color:black;
+}
+.blogiteksti{
+  padding:20px;
+  margin:auto;
+  font-size:14px;
 }

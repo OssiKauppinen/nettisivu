@@ -30,15 +30,15 @@
       </div><br><br>
       <div class="contact">
         <label>Puh. numero</label> 
-          <input type="text">
+          <input type="text" id="num">
       </div><br><br>
       <div class="contact">
         <label>Ikä</label>
-          <input type="number">
+          <input type="number" id="age">
       </div><br><br>
       <div class="contact">
         <label>Syntymäaika</label> 
-          <input type="date"><br><br>
+          <input type="date" id="dateofbirth"><br><br>
       </div>
       <div class="contact">
         <label>Terveiset</label> 
@@ -46,7 +46,7 @@
       </div>
       <div class="contact">
         <label>Miten haluat, että olen yhteydessä?</label>
-          <select>
+          <select id="yhteys">
             <option value="Puhelimitse">Puhelimitse</option>
             <option value="Sähköpostitse">Sähköpostitse</option>
             <option value="En halua">En halua, että minuun otetaan yhteyttä</option>
@@ -60,6 +60,7 @@
     <div class="navigointi">
       <ul>
         <li><a href="index.html">Portfolio</a></li>
+        <li><a href="blogi.html">Blogi</a></li>
         <li><a class="active" href="contact.html">Ota yhteyttä</a></li>
         <li><a id="asetus" href="#" onclick="naytaValikko();return false;">Asetukset</a></li>
       <div id="valinta" class="teemavalinta" style="display:none;">
