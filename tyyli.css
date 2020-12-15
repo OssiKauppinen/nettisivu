@@ -220,7 +220,9 @@ body{
   color:black;
 }
 .blogiteksti{
-  padding:20px;
+  padding:40px;
+  text-align: justify;
   margin:auto;
+  margin-right: 100px;
   font-size:14px;
 }
