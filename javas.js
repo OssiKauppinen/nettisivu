@@ -38,6 +38,7 @@ lahetysnappi.addEventListener('click', e =>{
     postiSisalto.style.borderColor = 'red';
   }else{
   sendJSON();
+  console.log("sent here");
   kiitos.innerHTML = (`Kiitos yhteydenotostasi ${nimiSisalto.value}`);
   setTimeout(() => kiitos.innerHTML = "", 30000);
   setTimeout(() => kiitos.classList.remove('kiitos'), 30000);
@@ -76,7 +77,7 @@ function sendJSON(){
   };
   var data = JSON.stringify({
     "EmailMsg": viestiKentta, // Kirjoittaa spostin sisällön
-    "EmailTo": "ossi.kauppinen", // Oma spostini
+    "EmailTo": "Ossi.Kauppinen", // Oma spostini
     "EmailName": nimiKentta // Nimikentän sisältö
   });
   xhr.send(data);
