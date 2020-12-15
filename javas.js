@@ -21,7 +21,6 @@ function rainbowMode() {
    valikko.style.display = "none";
 }
 
-window.onload=function(){
 const lahetysnappi = document.querySelector('#laheta');
 const nimiSisalto = document.querySelector('#nimi');
 const postiSisalto = document.querySelector('#sposti');
@@ -53,7 +52,7 @@ lahetysnappi.addEventListener('click', e =>{
   lahetysnappi.disabled = true;
   setTimeout(() => lahetysnappi.disabled = false, 30000);
 }});
-}
+
 const nimiKentta = document.querySelector('#nimi').value;
 const emailKentta = document.querySelector('#sposti').value;
 const viestiKentta = document.querySelector('textarea').value;
