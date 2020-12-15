@@ -54,29 +54,32 @@ lahetysnappi.addEventListener('click', e =>{
   setTimeout(() => lahetysnappi.disabled = false, 30000);
 }});
 
-const nimiKentta = document.querySelector('#nimi').value;
-const emailKentta = document.querySelector('#sposti').value;
-const viestiKentta = document.querySelector('textarea').value;
-const numeroKentta = document.querySelector('#num').value;
-const ikaKentta = document.querySelector('#age').value;
-const syntymaKentta = document.querySelector('#dateofbirth').value;
-const yhteydenottoKentta = document.querySelector('#yhteys').value;
-
 function sendJSON(){
+  const nimiKentta = document.querySelector('#nimi').value;
+  const emailKentta = document.querySelector('#sposti').value;
+  const viestiKentta = document.querySelector('#textarea').value;
+  const numeroKentta = document.querySelector('#num').value;
+  const ikaKentta = document.querySelector('#age').value;
+  const syntymaKentta = document.querySelector('#dateofbirth').value;
+  const yhteydenottoKentta = document.querySelector('#yhteys').value;
   let xhr = new XMLHttpRequest();
   let url = "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp2?code=PnWhScmEcspN8Fy7eYKnIZA37AFgUZ0fMQ1OpXOJ6dtBPBGNXAMIqQ==";
 
   xhr.open("POST", url, true);
-  
-  xhr.setRequestHeader("Content-type", "application/json");
+
+  xhr.setRequestHeader("Content-Type", "application/json");
 
   xhr.onreadystatechange = function(){
-    if(xhr.readyState === 4 && xhr.satus === 200){
-      console.log("Valmis, yhteys toimii");
+    if(xhr.readyState === 4 && xhr.status === 200){
+      console.log("valmis, yhteys toimii");
     }
   };
+  console.log('---------------');
+  console.log('Viesti: ' + viestiKentta);
+   console.log('---------------');
+  console.log('Nimi: ' + nimiKentta);
   var data = JSON.stringify({
-    "EmailMsg": viestiKentta, // Kirjoittaa spostin sisällön
+    "EmailMsg": 'VIESTI: ' + viestiKentta + " SÄHKÖPOSTI: " + emailKentta, // Kirjoittaa spostin sisällön
     "EmailTo": "Ossi.Kauppinen", // Oma spostini
     "EmailName": nimiKentta // Nimikentän sisältö
   });
