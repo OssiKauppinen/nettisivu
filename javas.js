@@ -38,6 +38,7 @@ lahetysnappi.addEventListener('click', e =>{
     nimiSisalto.style.borderColor = 'red';
     postiSisalto.style.borderColor = 'red';
   }else{
+  sendJSON();
   kiitos.innerHTML = (`Kiitos yhteydenotostasi ${nimiSisalto.value}`);
   setTimeout(() => kiitos.innerHTML = "", 30000);
   setTimeout(() => kiitos.classList.remove('kiitos'), 30000);
